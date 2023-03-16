@@ -12,3 +12,33 @@ const srthboxB = document.getElementById("srthboxB");
 const srthboxC = document.getElementById("srthboxC");
 const srthboxD = document.getElementById("srthboxD");
 const generatBtn = document.getElementById("generatBtn");
+
+console.log("pass", combinedChars);
+console.log("slider-", slider)
+
+
+//
+let sliderValue = 8
+pwdLenth.innerText = sliderValue
+
+
+// ON slider change
+slider.addEventListener('change', () => {
+    sliderValue = slider.value
+    pwdLenth.innerText = sliderValue
+        // generateRandomPassowrd()
+});
+
+//  includeUppperChar, includeLowerChar, includeNum, includeSpecialChar
+function generateRandomPassowrd(
+    charLen = 8, isUpperCase = false, isLowerCase = false, isNum = false, isSymbols = false
+) {
+
+
+    const char1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const char2 = 'abcdefghijklmnopqrstuvwxyz';
+    const char3 = '0123456789';
+    const char4 = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}";
+    const combinedChars = char1 + char2 + char3 + char4;
+
+}
